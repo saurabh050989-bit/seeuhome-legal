@@ -1,0 +1,107 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>SeeU Home — Email confirmed</title>
+<style>
+  :root{
+    --ink:#1C1B29;
+    --ink-soft:#5B5872;
+    --ink-faint:#8985A3;
+    --ground:#FAF9FC;
+    --card:#FFFFFF;
+    --accent:#6C4CF1;
+    --accent-soft:#F1EEFE;
+    --line:#E9E6F3;
+    --success:#1FA97A;
+    --success-soft:#E6F7F0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#F1EFFA;
+      --ink-soft:#B7B3CC;
+      --ink-faint:#8985A3;
+      --ground:#131120;
+      --card:#1B1830;
+      --accent:#A08DFF;
+      --accent-soft:#2A2548;
+      --line:#312B4E;
+      --success:#3FD79A;
+      --success-soft:#12271F;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#F1EFFA;
+    --ink-soft:#B7B3CC;
+    --ink-faint:#8985A3;
+    --ground:#131120;
+    --card:#1B1830;
+    --accent:#A08DFF;
+    --accent-soft:#2A2548;
+    --line:#312B4E;
+    --success:#3FD79A;
+    --success-soft:#12271F;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--ground);
+    color:var(--ink);
+    font-family:'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-block:40px;
+  }
+  .page{
+    max-width:420px;
+    width:100%;
+    margin:0 auto;
+    padding-inline:24px;
+    text-align:center;
+  }
+  .badge{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    background:var(--success-soft);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 24px;
+  }
+  .badge svg{ width:34px; height:34px; }
+  h1{
+    font-family:'Space Grotesk', -apple-system, sans-serif;
+    font-size:26px;
+    font-weight:700;
+    margin:0 0 12px;
+  }
+  p{
+    font-size:15px;
+    line-height:1.65;
+    color:var(--ink-soft);
+    margin:0 0 8px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:20px 22px;
+    margin-top:24px;
+    font-size:14px;
+    color:var(--ink-faint);
+  }
+</style>
+
+<div class="page">
+  <div class="badge">
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6 9 17l-5-5"/>
+    </svg>
+  </div>
+  <h1>Email confirmed</h1>
+  <p>Your SeeU Home account is verified. You're all set.</p>
+  <div class="card">
+    You can close this page now and go back to the SeeU Home app to log in.
+  </div>
+</div>
+
+</body></html>
