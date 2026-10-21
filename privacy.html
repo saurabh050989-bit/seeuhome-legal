@@ -148,7 +148,7 @@
 <div class="page">
   <div class="eyebrow">Privacy Policy</div>
   <h1>SeeU Home</h1>
-  <div class="updated">Last updated: 21 September 2026</div>
+  <div class="updated">Last updated: 19 October 2026</div>
 
   <div class="intro">
     SeeU Home is a home services booking app — book washroom cleaning, AC servicing, and other home cleaning services, and have a verified professional visit your address. This policy explains what information we collect when you use the app, why, and how it's handled.
@@ -159,17 +159,19 @@
   <table>
     <tr><th>What</th><th>Details</th></tr>
     <tr><td class="what">Account</td><td>Email address and password, used to sign you in.</td></tr>
-    <tr><td class="what">Profile</td><td>Your name and phone number.</td></tr>
+    <tr><td class="what">Profile</td><td>Your name and mobile number. The mobile number is asked at sign-up so we can reach you about your booking and so you can find your account if you forget which email you used. We do not verify it by OTP and do not use it for marketing.</td></tr>
     <tr><td class="what">Address &amp; location</td><td>Saved service addresses, GPS coordinates (only when you tap "Use Current Location"), recipient name, recipient phone number, and pincode for each address — including for addresses booked on someone else's behalf.</td></tr>
-    <tr><td class="what">Booking details</td><td>Services booked, scheduled date and time, quantity/size selections, booking status, and payment method chosen (UPI or cash).</td></tr>
+    <tr><td class="what">Booking details</td><td>Services booked, scheduled date and time, quantity/size selections, booking status, payment method chosen (online or cash), payment status, and the payment reference (order and payment ID) issued by Razorpay for online payments.</td></tr>
     <tr><td class="what">Push notifications</td><td>A device push token, so we can notify you about your booking status.</td></tr>
+    <tr><td class="what">Diagnostics</td><td>Crash reports and basic technical information about the app and your device (such as device model and OS version), used to find and fix errors.</td></tr>
   </table>
-  <p>We do <b>not</b> collect or store card numbers, UPI PINs, or bank details. Payment happens through your own UPI app (Google Pay, PhonePe, etc.) via a standard payment link — SeeU Home never sees or handles that transaction directly.</p>
+  <p>We do <b>not</b> collect or store card numbers, UPI PINs, or bank details. Online payments are made on Razorpay's secure payment screen — your payment details are handled by Razorpay and your bank or UPI app, and SeeU Home only receives confirmation of whether the payment succeeded.</p>
 
   <h2><span class="num">2.</span>How we use it</h2>
   <ul>
     <li><b>To create and run your bookings</b> — matching you with a professional, scheduling the visit, and calculating the price for services like per-sqft or per-unit cleaning.</li>
     <li><b>To reach you</b> — booking confirmations, status updates, and support if something needs attention.</li>
+    <li><b>To help you recover your account</b> — if you forget your email, you can enter your mobile number and we send a login link to the email on your account (we show you only a partly hidden version of that email).</li>
     <li><b>To assign the right person to your address</b> — your address and contact details are shared with the professional assigned to your booking, and with us for scheduling and support.</li>
   </ul>
 
@@ -177,6 +179,9 @@
   <p>We don't sell your data. It's shared only with:</p>
   <ul>
     <li><b>Supabase</b> — our backend database and authentication provider, which stores your account, address, and booking data securely.</li>
+    <li><b>Razorpay</b> — our payment partner, which processes online payments (UPI, cards, net banking) and shares the payment result with us. Your name, email and phone number may be passed to it to prefill the payment screen.</li>
+    <li><b>Brevo</b> — the email service that sends account emails such as sign-up confirmation and password reset links.</li>
+    <li><b>Sentry</b> — a crash and error reporting service that helps us fix problems in the app.</li>
     <li><b>Expo</b> — the push notification service that delivers booking updates to your device.</li>
     <li><b>The service professional assigned to your booking</b> — only your name, address, and phone number for that visit, so they can reach and find you.</li>
   </ul>
